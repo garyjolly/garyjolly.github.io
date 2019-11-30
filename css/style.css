@@ -18,7 +18,7 @@ header .contact-info {
     border: 1px solid red;
 }
 
-nav ul {background-color: lightgray;
+nav ul {background-color: green;
     display: flex;
     list-style: none;
 }
