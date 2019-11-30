@@ -2,12 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100%;
+}
+
 header {background-color: yellow;    
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-wrap: wrap;    
 }
 
 header .contact-info {
