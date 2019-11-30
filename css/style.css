@@ -17,7 +17,16 @@ header .contact-info {
     border: 1px solid red;
 }
 
-nav ul {background-color: gray;
+nav ul {background-color: lightgray;
     display: flex;
     list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: .25rem;
+    text-align: center;
+    margin-right: 1rem;
 }
