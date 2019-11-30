@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {background-color: yellow;    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .contact-info {
+    border: 1px solid red;
+}
+
+nav ul {background-color: gray;
+    display: flex;
+    list-style: none;
+}
