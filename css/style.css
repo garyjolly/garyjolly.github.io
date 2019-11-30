@@ -23,10 +23,11 @@ header {background-color: rgba(58, 57, 57, 0.082);
 }
 
 header .contact-info {
-    border: 1px solid black;
+    //border: 1px solid black;
     //margin-right: auto;
     //flex: 1;
     padding: .5rem;
+    //margin: 5px;
 }
 
 header .contact-info h1 {
