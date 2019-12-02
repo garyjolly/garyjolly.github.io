@@ -14,7 +14,7 @@ header {background-color: rgba(58, 57, 57, 0.082);
     display: flex;
     //flex-direction: column;
     //align-items: flex-end;
-    //justify-content: space-between;
+    justify-content: center;
     align-items: center;
     //flex-wrap: wrap;
     //font-size: 20px;
@@ -23,11 +23,12 @@ header {background-color: rgba(58, 57, 57, 0.082);
 }
 
 header .contact-info {
-    //border: 1px solid black;
+    border: 2px solid black;
     //margin-right: auto;
     //flex: 1;
     padding: .5rem;
     //margin: 5px;
+    border-radius: 1rem;
 }
 
 header .contact-info > * {
@@ -54,9 +55,12 @@ nav {
 }
 nav ul {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: rgb(75, 73, 73);
 }
 
 nav a {
@@ -67,15 +71,22 @@ nav a {
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    //border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+nav ul li:nth-child(5) a {
+    //background-color: rgb(17, 17, 184);
+    //margin-left: 0 auto;
 }
 
 nav a:hover {
-    opacity: .7;
-  }
-  
+    /* opacity: .7;*/
+    background-color: rgba(157, 157, 168);
+    color: black;
+    font-weight: bold;    
+}
 
 main {
     //display: flex;
-    //flex-direction: column;
+    //flex-direction: column;    
 }
