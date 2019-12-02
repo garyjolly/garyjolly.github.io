@@ -11,6 +11,10 @@ body {
     margin: 10px;
 }
 
+hr {
+    border: 1px solid black;
+}
+
 header {    
     display: flex;
     align-items: center;
@@ -50,40 +54,18 @@ nav a {
     border-radius: .25rem;
 }
 
-/*main > * {
-    border: 5px solid black;
-    margin 10p0x;
-    border-radius: 1rem;
-}*/
-
-main > *, footer {
-    border: 5px solid black;
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: 1rem; 
+nav a:hover {
+    background-color: rgba(157, 157, 168);
+    color: black;
+    font-weight: bold;    
 }
 
 section h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-top: .5rem;
 }
 
-section p {
-    /* margin-bottom: .5rem; */
-}
-
-/* .contact form fieldset {
-    background-color: yellow;
-} */
-
-#contact {
-    /* background-color: black;
-    color: white; */
-    
-}
-
 #contact form {
-    /* background-color: yellow; */
     width: 85%;
     margin: 0 auto; 
 }
