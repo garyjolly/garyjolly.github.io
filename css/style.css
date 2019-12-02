@@ -1,62 +1,62 @@
 html {
-    //background-color: black;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: rgba(211, 211, 211, 0.726);
-    //margin: 0 auto;
-    //width: 98%;
     margin: 10px;
 }
 
 header {background-color: rgba(58, 57, 57, 0.082);    
     display: flex;
-    //flex-direction: column;
-    //align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    //flex-wrap: wrap;
-    //font-size: 20px;
-    //width: 100%;
-    //box-shadow: 0 3px 6px 0px #333;            
+    /* flex-wrap: wrap;             */
 }
 
 header .contact-info {
     border: 2px solid black;
-    //margin-right: auto;
-    //flex: 1;
     padding: .5rem;
-    //margin: 5px;
+    /* margin-right: 1rem; */
     border-radius: 1rem;
 }
 
 header .contact-info > * {
     margin: 0;
 }
-/*
-header .contact-info h1 {
-    margin: 0;
-}
-
-header .contact-info h3 {
-    margin: 0;
-    //font-style: italic;
-}
-
-header .contact-info p {
-    margin: 0;
-}
-*/
 
 nav {
-    //align-self: center;
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    /* background-color: rgb(75, 73, 73); */
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+/* nav {
     flex: 3;
 }
 nav ul {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,19 +74,8 @@ nav a {
     border-radius: 1rem;
 }
 
-nav ul li:nth-child(5) a {
-    //background-color: rgb(17, 17, 184);
-    //margin-left: 0 auto;
-}
-
 nav a:hover {
-    /* opacity: .7;*/
     background-color: rgba(157, 157, 168);
     color: black;
     font-weight: bold;    
-}
-
-main {
-    //display: flex;
-    //flex-direction: column;    
-}
+} */
