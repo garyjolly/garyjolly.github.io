@@ -42,7 +42,8 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    background-color: black;
+    /* background-color: black; */
+    background-color: blue;
     color: white;
     padding: .5rem;
     border-radius: .25rem;
@@ -58,7 +59,7 @@ nav a {
 }
 nav ul {
     display: flex;
-    /* justify-content: space-between;
+    ustify-content: space-between;
     flex-wrap: wrap; */
     list-style: none;
     padding: 0;
