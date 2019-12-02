@@ -42,8 +42,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    /* background-color: black; */
-    background-color: blue;
+    background-color: black;
     color: white;
     padding: .5rem;
     border-radius: .25rem;
