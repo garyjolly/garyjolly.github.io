@@ -70,6 +70,12 @@ section h2 {
     margin: 0 auto; 
 }
 
+/* We'll use flexbox on footer to make it more responsive: */
+/* so social media icons don't get crunched on mobile.     */
+footer {
+    display: flex;
+}
+
 footer .footer-title {
     font-size: 1rem;
     font-style: italic;
@@ -78,9 +84,6 @@ footer .footer-title {
 
 footer a {
     font-size: 1rem;
-}
-
-footer a:nth-of-type(1) {
+    text-decoration: none;
     margin-left: .5rem;
-    margin-right: .5rem;
 }
