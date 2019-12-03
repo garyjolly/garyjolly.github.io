@@ -65,9 +65,19 @@ section h2 {
     margin-top: .5rem;
 }
 
-#contact form {
-    width: 85%;
-    margin: 0 auto; 
+form {
+    width: 50%;
+}
+
+form input, form textarea {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    background-color: rgba(211, 211, 211, 0.726);
+}
+
+form button {
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* We'll use flexbox on footer to make it more responsive: */
@@ -86,6 +96,5 @@ footer .footer-title {
 footer a {
     font-size: 1rem;
     text-decoration: none;
-    margin-left: .5rem;
-    background-color: yellow;
+    margin-left: .5rem;    
 }
