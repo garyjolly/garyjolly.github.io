@@ -69,3 +69,20 @@ section h2 {
     width: 85%;
     margin: 0 auto; 
 }
+
+footer .footer-title {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 1rem;
+}
+
+footer a:nth-of-type(1) {
+    /* background-color: yellow;
+    border: 2px solid red; */
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
