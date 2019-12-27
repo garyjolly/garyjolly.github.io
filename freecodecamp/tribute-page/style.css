@@ -1,0 +1,68 @@
+html {
+  background-color: black;
+}
+
+body {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;  
+}
+
+#main {
+  border-radius: 1.5em;
+  background-color: white;
+  padding: 1rem;
+}
+
+#main > * {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+#img-div img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#tribute-info ul {
+  background-color: rgba(211, 211, 211, 0.75);
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+li {
+  margin-bottom: .25rem;
+  line-height: 1.5rem;
+}
+
+li span {
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a:visited {
+  color: blue;
+}
