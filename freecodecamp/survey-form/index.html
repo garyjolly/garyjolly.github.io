@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill out the form.</p>
+        <form id="survey-form" action="https://getsimpleform.com/messages?form_api_token=85475421746dfe59a889a5a718e30faa" method="post">
+            <fieldset>
+                <legend>Survey</legend>
+                <div>
+                    <label id="name-label" for="name">
+                        <span class="label">Name</span>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </label>
+                </div>
+                <div>
+                    <label id="email-label" for="email">
+                        <span class="label">Email</span>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </label>
+                </div>
+                <div>
+                    <label id="number-label" for="number">
+                        <span class="label">Age (optional)</span>
+                        <input type="number" id="number" name="age" min="1" max="150" placeholder="Your age">
+                    </label>
+                </div>
+                <div>
+                    <label class="label">Which option best describes your current role?</label>
+                    <select id="dropdown" name="role">
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="private">Prefer Not To Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label">Would you recommend us to a friend?</label>
+                    <label class="radio"><input type="radio" name="will-recommend" value="yes" checked> Definitely</label>
+                    <label class="radio"><input type="radio" name="will-recommend" value="unsure"> Not Sure</label>
+                    <label class="radio"><input type="radio" name="will-recommend" value="no"> No</label> 
+                </div>
+                <div>
+                    <label class="label">What would you like to see improved? (check all that apply)</label>
+                    <label class="radio"><input type="checkbox" name="improve" value="front-end-projects"> Front-end Projects</label> 
+                    <label class="radio"><input type="checkbox" name="improve" value="back-end-projects"> Back-end Projects</label>
+                    <label class="radio"><input type="checkbox" name="improve" value="data-visualization"> Data Visualization</label>
+                    <label class="radio"><input type="checkbox" name="improve" value="challenges"> Challenges</label>
+                    <label class="radio"><input type="checkbox" name="improve" value="open-source-community"> Open Source Community</label>
+                    <label class="radio"><input type="checkbox" name="improve" value="gitter-help-rooms"> Gitter help rooms</label>
+                </div>
+                <div>
+                    <label class="label">Comments</label>
+                    <label for="comments">                    
+                        <textarea id="comments" name="comments" cols="50" rows="10" placeholder="Your comments" required></textarea>
+                    </label>
+                </div>                                
+                <div>
+                    <button id="submit" type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                </div>                
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
