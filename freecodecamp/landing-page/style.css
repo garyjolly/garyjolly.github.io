@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(211, 211, 211, 0.25);
+}
+
+#logo img {
+    max-width: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 20px;
+    background-color: #eee;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+section.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="submit"],
+.pricing-section button {
+    background-color: gold;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    height: 1.5rem;
+    text-transform: uppercase;
+    border: 0;
+}
+
+input[type="submit"]:hover,
+.pricing-section button:hover {
+    background-color: orange;
+}
+
+main {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#features {
+    margin-top: 3rem;
+}
+
+.feature-section {
+    display: flex;
+}
+
+.icon {
+    color: brown;
+    width: 125px;
+    height: 125px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100px;
+}
+
+.highlight > * {
+    margin: 0;
+}
+
+#works {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;    
+}
+
+#pricing {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;    
+}
+
+#pricing .product {
+    background-color: rgb(211, 211, 211);
+}
+
+#pricing .product h3 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.pricing-section {
+    border: 3px solid black;
+}
+
+.pricing-section .price {
+    font-size: 1.5rem;
+}
+
+.pricing-section .summary p {
+    font-style: italic;
+}
+
+.pricing-section button {
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: rgb(211, 211, 211);
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .feature-section {
+      flex-direction: column;
+    }
+}
