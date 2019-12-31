@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 1.5fr 3.5fr;
+    grid-template-columns: minmax(350px, 1fr) 3.5fr;
     grid-template-rows: 1fr;
 }
 
@@ -16,6 +16,7 @@ nav {
 
 main {
     grid-column: 2 / 3;
+    margin-left: 2rem;
 }
 
 nav header {
@@ -85,5 +86,7 @@ section p {
     main {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        position: absolute;
+        margin-top: 300px;
     }
 }
