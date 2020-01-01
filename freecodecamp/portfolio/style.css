@@ -1,0 +1,140 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {  
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: black;            
+}
+
+nav ul {     
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+  font-size: 1.5rem;            
+}
+
+nav a {
+  text-decoration: none;
+  background-color: white;
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+nav a:hover {
+  background-color: rgba(157, 157, 168);
+  color: black;
+  font-weight: bold;    
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section .about {
+  border: 2px solid black;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin: .5rem;
+  font-size: 3rem;
+}
+
+#welcome-section .about h1 {
+  font-size: 1.6em;
+}
+
+#welcome-section .about > * {
+  margin: 0;
+}
+
+#projects {
+  border-bottom: 3px solid black;
+}
+
+#projects .project-group {
+  padding-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tile {
+  padding: 1rem;
+}
+
+.project-tile img {
+  display: block;
+  width: 75%;
+  height: 75%;
+  border: 2px solid black;
+  border-radius: .5rem;
+}
+
+.project-tile a {
+  display: block;
+  font-size: 1.25rem;
+  padding: .5rem;  
+}
+
+#contact {
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 50%;
+  margin-bottom: .5rem;
+}
+
+form input, form textarea {
+  font-size: 1rem;
+  margin-bottom: .5rem;
+  background-color: rgba(211, 211, 211, 0.726);
+}
+
+form button {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  body {  
+    min-width: 450px;
+  }
+
+  nav ul {
+    flex-direction: column;            
+  }
+
+  nav li {
+    margin-bottom: .5rem;            
+  }
+
+  nav a {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  #projects .project-group {
+    flex-direction: column;
+  }  
+}

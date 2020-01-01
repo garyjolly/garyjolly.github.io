@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About Me</a></li>               
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="profile-link" href="https://www.freecodecamp.org/garyjolly" target="_blank">FCC Profile</a></li>
+            </ul>
+        </nav>                
+    </header>
+    <main>
+        <section id="welcome-section">
+            <div class="about">
+                <h1>Gary Jolly</h1>
+                <h3>Full Stack Developer</h3>
+                <p>Rochester, NY USA</p>
+            </div>
+        </section>             
+        <section id="projects">
+            <div class="project-group">
+                <article class="project-tile">
+                    <h2>Tibute Page Project</h2>
+                    <img src="./tribute.jpeg" alt="Tribute Project Image">
+                    <a href="http://garyjolly.github.io/freecodecamp/tribute-page" target="_blank">Trubute Page</a>                                
+                </article>
+                <article class="project-tile">
+                    <h2>Technical Documentation Project</h2>
+                    <img src="./tech-doc.jpeg" alt="Technical Documentation Project Image">
+                    <a href="http://garyjolly.github.io/freecodecamp/tech-doc" target="_blank">Technical Documentation</a>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://getsimpleform.com/messages?form_api_token=85475421746dfe59a889a5a718e30faa" method="post">
+                <fieldset>
+                  <legend>Contact Me!</legend>
+                  <div>
+                    <label for="name">
+                      <strong>Name:</strong><br />
+                      <input type="text" name="name" size="30" placeholder="Your name" required>
+                    </label>          
+                  </div>        
+                  <div>
+                    <label for="email">
+                      <strong>Email:</strong><br />
+                      <input type="email" name="email" size="30" placeholder="Your email" required>
+                    </label>
+                  </div>        
+                  <div>
+                    <label for="comments">
+                      <strong>Comments:</strong><br />
+                      <textarea name="comments" cols="50" rows="10" placeholder="Your comments" required></textarea>
+                    </label>
+                  </div>        
+                  <div>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                  </div>
+                </fieldset>
+        </section>
+    </main>    
+</body>
+</html>
