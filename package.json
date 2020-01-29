@@ -1,0 +1,19 @@
+{
+  "name": "garyjolly.github.io",
+  "version": "1.0.0",
+  "description": "Gary Jolly Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyjolly/garyjolly.github.io.git"
+  },
+  "author": "Gary Jolly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garyjolly/garyjolly.github.io/issues"
+  },
+  "homepage": "https://github.com/garyjolly/garyjolly.github.io#readme"
+}
