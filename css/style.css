@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: rgba(211, 211, 211, 0.726);
-    margin: 10px;
+    margin: 0;
 }
 
 hr {
@@ -19,7 +19,13 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(58, 57, 57, 0.082);            
+    /*background-color: rgba(58, 57, 57, 0.082);*/
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1; 
+    width: 100%;
+    height: 150px;           
 }
 
 header .contact-info {
@@ -60,6 +66,11 @@ nav a:hover {
     font-weight: bold;    
 }
 
+#content {
+    position: relative;
+    top: 150px;
+}
+
 section h2 {
     font-size: 1.75rem;
     margin-top: .5rem;
@@ -98,3 +109,28 @@ footer a {
     text-decoration: none;
     margin-left: .5rem;    
 }
+
+#ctn-skills {
+    position: relative;
+    /* border: solid 1px green; */
+  }
+  
+#ctn-skills a {
+    position: absolute;
+    left: 0px;
+    top: -150px;
+    /* border: solid 1px red; */
+}  
+
+#ctn-experience {
+    position: relative;
+    /* border: solid 1px green; */
+  }
+  
+#ctn-experience a {
+    position: absolute;
+    left: 0px;
+    top: -150px;
+    /* border: solid 1px red; */
+}  
+
