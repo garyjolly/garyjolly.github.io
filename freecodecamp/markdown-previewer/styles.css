@@ -1,0 +1,55 @@
+.toolbar {
+    background-color: #4aa3a3;
+    padding: 4px 4px 3px 3px;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.editorWrap {
+    width: 600px;
+    margin: 18px auto;
+}
+
+.editorWrap textarea {
+    width: 99%;
+    min-height: 200px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.editorWrap .toolbar {
+    width: 99%;
+}
+
+.previewWrap {
+    width: 800px;
+    margin: 20px auto;
+    min-height: 200px;
+    padding-right: 20px;
+}
+
+.previewWrap .toolbar {
+    left: -1px;
+    width: 100%;
+    padding-right: 17px;
+}
+
+.editorWrap textarea, .previewWrap {
+    background-color: #c0d8d8;
+    border: 1px solid #1d2f2f;
+    box-shadow: 1px 1px 10px 2px #3a5f5f;
+    border-top: none;
+}
+
+.previewWrap #preview {
+    margin-left: 5px;
+    margin-top: -10px;
+    width: 100%;
+    padding-top: 25px;
+}
