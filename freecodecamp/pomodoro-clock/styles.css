@@ -1,0 +1,60 @@
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.length-control, #break-length, #session-length {
+    display: inline-block;
+}
+
+#break-length, #session-length {
+    margin: 0 1rem;
+}
+
+.length-control {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-level {
+    border: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-wrapper {
+    font-size: 3rem;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#start_stop, #reset {
+    border: 1px solid black;
+}
+
+#start_stop {
+    margin-right: 0.5rem;
+}
+
+.warning-countdown {
+    color: red;
+}
