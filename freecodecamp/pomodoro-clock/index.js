@@ -8,7 +8,16 @@ const ClockUtil = (
     let time = (seconds) =>
       ('0'+ Math.floor(seconds/60) % 60).slice(-2) + ':' + ('0' + seconds % 60).slice(-2);
 
-    function initializeState() {
+    let resetAudio = audioRef => {
+      // Pause audio
+      const audio = audioRef.current;
+      audio.pause();
+
+      // Rewind audio
+      audio.currentTime = 0;
+    };
+    
+      function initializeState() {
       let clockSeconds = 1500; // 25 minutes
   
       return {
@@ -21,7 +30,7 @@ const ClockUtil = (
 
     }
 
-    return {initializeState, time, MAX_LENGTH, LABEL};
+    return {initializeState, time, MAX_LENGTH, LABEL, resetAudio};
   }
 )();
 
@@ -65,8 +74,8 @@ class PomodoroClock extends React.Component {
 
     if(clockSeconds === 0) {
       // Play audio
-      const audioElement = this.state.audioRef.current;
-      audioElement.play();
+      const audio = this.state.audioRef.current;
+      audio.play();
 
       // Stop timer
       clearInterval(timer);
@@ -85,9 +94,8 @@ class PomodoroClock extends React.Component {
   }
 
   runNext = () => {
-    // Pause audio
-    const audioElement = this.state.audioRef.current;
-    audioElement.pause();
+    // Reset audio
+    ClockUtil.resetAudio(this.state.audioRef);
     
     let label = this.getNextLabel();
     let clockSeconds = label === ClockUtil.LABEL.session ? this.getSessionLengthSeconds() :this.getBreakLengthSeconds();
@@ -113,11 +121,8 @@ class PomodoroClock extends React.Component {
       clearInterval(this.state.timer);
     }
 
-    if(this.state.audioRef.current) {
-      // Pause audio
-      const audioElement = this.state.audioRef.current;
-      audioElement.pause();
-  }
+    // Reset audio
+    ClockUtil.resetAudio(this.state.audioRef);
 
     let state =  ClockUtil.initializeState();
     this.setState(state);      
