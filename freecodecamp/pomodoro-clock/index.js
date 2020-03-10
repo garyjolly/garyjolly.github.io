@@ -231,7 +231,7 @@ class PomodoroClock extends React.Component {
             <button id="start_stop" onClick={() => this.handleStartStop()}><i className="fa fa-play fa-2x"></i> <i className="fa fa-pause fa-2x"></i></button>
             <button id="reset" onClick={() => this.handleReset()}><i className="fas fa-sync-alt fa-2x"></i></button>
         </div>
-        <audio id="beep" ref={this.state.audioRef} src="http://www.peter-weinberg.com/files/1014/8073/6015/BeepSound.wav"></audio>
+        <audio id="beep" ref={this.state.audioRef} src="./audio/BeepSound.wav"></audio>
       </main>      
     );
   }
